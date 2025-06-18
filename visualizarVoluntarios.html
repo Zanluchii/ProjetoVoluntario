@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visualizar Voluntários</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<div id="modalEditar" style="display: none;" class="modal">
+    <div class="modal-content">
+      <h3>Editar Voluntário</h3>
+      <form id="formEditarVoluntario">
+        <input type="text" id="editarNome" placeholder="Nome" required />
+        <input type="email" id="editarEmail" placeholder="Email" required />
+        <input type="text" id="editarTelefone" placeholder="Telefone" required />
+        <input type="text" id="editarTipoAjuda" placeholder="Tipo de Ajuda" required />
+        <button type="submit">Salvar Alterações</button>
+        <button type="button" onclick="fecharModal()">Cancelar</button>
+      </form>
+    </div>
+  </div>  
+<body>
+  <header>
+    <h1>Voluntários Cadastrados</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cadastro.html">Cadastrar Necessidade</a>
+      <a href="visualizar.html">Ver Necessidades</a>
+      <a href="cadastroVoluntario.html">Cadastrar Voluntário</a>
+      <a href="visualizarVoluntarios.html">Ver Voluntário</a>
+    </nav>
+  </header>
+
+  <main>
+    <input type="text" id="pesquisaVoluntario" placeholder="Pesquisar por nome ou tipo de ajuda..." />
+    <div id="listaVoluntarios"></div>
+  </main>
+
+  <footer>&copy; 2025 Plataforma Solidária</footer>
+  <script src="script.js"></script>
+</body>
+</html>
+

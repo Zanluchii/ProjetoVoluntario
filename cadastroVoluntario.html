@@ -2,35 +2,36 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Visualizar Necessidades</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Voluntário</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Necessidades Cadastradas</h1>
+    <h1>Cadastrar Voluntário</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="cadastro.html">Cadastrar Necessidade</a>
       <a href="visualizar.html">Ver Necessidades</a>
       <a href="cadastroVoluntario.html">Cadastrar Voluntário</a>
       <a href="visualizarVoluntarios.html">Ver Voluntário</a> 
-
-    </nav><select id="filtroTipoAjuda">
-      <option value="">Todos os Tipos</option>
-      <option value="Educacao">Educação</option>
-      <option value="Saude">Saúde</option>
-      <option value="Meio Ambiente">Meio Ambiente</option>
-      <option value="Doacao de alimentos">Doação de alimentos</option>
-      <option value="Doacao de roupas">Doação de roupas</option>
-      <option value="Outros">Outros</option>
-    </select>
+    </nav>
   </header>
 
   <main>
-    <input type="text" id="pesquisa" placeholder="Pesquisar por título ou descrição..." />
-    <select id="filtroTipoAjuda">
-        <option value="">Todos os Tipos</option>
+    <form id="formVoluntario">
+      <label for="nome">Nome completo*</label>
+      <input type="text" id="nome" required />
+
+      <label for="email">E-mail*</label>
+      <input type="email" id="email" required />
+
+      <label for="telefone">Telefone*</label>
+      <input type="tel" id="telefone" required />
+
+      <label for="tipoAjuda">Tipo de ajuda que pode oferecer*</label>
+      <select id="tipoAjuda" required>
+        <option value="">Selecione</option>
         <option value="Educacao">Educação</option>
         <option value="Saude">Saúde</option>
         <option value="Meio Ambiente">Meio Ambiente</option>
@@ -39,11 +40,11 @@
         <option value="Outros">Outros</option>
       </select>
 
-    <div id="listaNecessidades"></div>
+      <button type="submit">Cadastrar Voluntário</button>
+    </form>
   </main>
 
   <footer>&copy; 2025 Plataforma Solidária</footer>
-
   <script src="script.js"></script>
 </body>
-</html> 
+</html>

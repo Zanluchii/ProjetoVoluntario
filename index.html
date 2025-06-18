@@ -2,9 +2,55 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plataforma Solidária</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plataforma Solidária - Home</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #0066cc;
+      color: white;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 1rem;
+      text-decoration: none;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #004080;
+    }
+
+    footer {
+      background-color: #0066cc;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,16 +59,45 @@
       <a href="index.html">Home</a>
       <a href="cadastro.html">Cadastrar Necessidade</a>
       <a href="visualizar.html">Ver Necessidades</a>
+      <a href="cadastroVoluntario.html">Cadastrar Voluntário</a>
+      <a href="visualizarVoluntarios.html">Ver Voluntário</a> 
     </nav>
   </header>
 
   <main>
     <section>
       <h2>Bem-vindo à Plataforma Solidária!</h2>
-      <p>Conectamos instituições que precisam de ajuda com pessoas dispostas a contribuir com seu tempo ou doações.</p>
+      <p>Nosso objetivo é conectar instituições que precisam de ajuda com voluntários dispostos a contribuir com seu tempo, doações ou serviços.</p>
+      <p>Você pode visualizar as necessidades cadastradas ou registrar uma nova demanda.</p>
+    </section>
+
+    <section>
+      <h2>Como Funciona</h2>
+      <p>As instituições preenchem um formulário com suas necessidades. Voluntários podem então acessar essa lista e se oferecer para ajudar.</p>
+    </section>
+
+    <section>
+      <h2>Quem Pode Ajudar?</h2>
+      <p>Qualquer pessoa! Seja com tempo, conhecimento, doações ou disposição. Toda ajuda é bem-vinda.</p>
+    </section>
+
+    <section>
+      <h2>Tipos de Ajuda Comuns</h2>
+      <ul>
+        <li>Reforço escolar para crianças</li>
+        <li>Doação de roupas e alimentos</li>
+        <li>Campanhas de saúde</li>
+        <li>Projetos de educação ambiental</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Junte-se a Nós</h2>
+      <p>Se você representa uma instituição, cadastre suas necessidades. Se é voluntário, veja como pode ajudar.</p>
     </section>
   </main>
 
   <footer>&copy; 2025 Plataforma Solidária</footer>
 </body>
 </html>
+
