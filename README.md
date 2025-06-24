@@ -1,6 +1,6 @@
 # Plataforma Solidária
 
-Este projeto é uma plataforma web simples para conectar instituições com voluntários que desejam ajudar.
+Este projeto é uma plataforma web simples para conectar instituições com voluntários que desejam ajudar!
 
 ## Funcionalidades
 
