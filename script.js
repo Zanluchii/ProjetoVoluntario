@@ -203,3 +203,42 @@ document.getElementById('formEditarVoluntario').addEventListener('submit', funct
   fecharModal();
   exibirVoluntarios();
 });
+
+function editarVoluntario(index) {
+  const voluntario = voluntarios[index];
+
+  document.getElementById('editarNome').value = voluntario.nome;
+  document.getElementById('editarEmail').value = voluntario.email;
+  document.getElementById('editarTelefone').value = voluntario.telefone;
+  document.getElementById('editarTipoAjuda').value = voluntario.tipoAjuda;
+
+  document.getElementById('modalEditar').style.display = 'block';
+
+  const formEditar = document.getElementById('formEditarVoluntario');
+  formEditar.onsubmit = function (e) {
+    e.preventDefault();
+
+    voluntarios[index] = {
+      nome: document.getElementById('editarNome').value.trim(),
+      email: document.getElementById('editarEmail').value.trim(),
+      telefone: document.getElementById('editarTelefone').value.trim(),
+      tipoAjuda: document.getElementById('editarTipoAjuda').value.trim()
+    };
+
+    localStorage.setItem('voluntarios', JSON.stringify(voluntarios));
+    document.getElementById('modalEditar').style.display = 'none';
+    exibirVoluntarios();
+  };
+}
+
+function excluirVoluntario(index) {
+  if (confirm("Tem certeza que deseja excluir este voluntário?")) {
+    voluntarios.splice(index, 1);
+    localStorage.setItem('voluntarios', JSON.stringify(voluntarios));
+    exibirVoluntarios();
+  }
+}
+
+function fecharModal() {
+  document.getElementById('modalEditar').style.display = 'none';
+}
