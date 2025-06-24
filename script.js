@@ -203,7 +203,7 @@ document.getElementById('formEditarVoluntario').addEventListener('submit', funct
   fecharModal();
   exibirVoluntarios();
 });
-
+ /*Função editar Voluntário*/
 function editarVoluntario(index) {
   const voluntario = voluntarios[index];
 
