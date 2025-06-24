@@ -67,7 +67,7 @@
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
   }
-  
+  /* Estilo para o botão de remover */
   .card button {
     background-color: #d9534f;
     color: white;
